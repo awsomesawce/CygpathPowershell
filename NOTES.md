@@ -27,5 +27,6 @@ $Script:patterns | Foreach-object {
 # then return the list
 # but it might not be a list when it is in the parent scope.
 $return @{type=$fileInfoList.gettype().FullName
-list=$fileinfolist}
+list=$fileinfolist
+platformiswin32=node -p "process.platform"}
 ```
